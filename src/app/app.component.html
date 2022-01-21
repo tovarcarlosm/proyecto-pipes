@@ -1,0 +1,144 @@
+<div class="container mt-3">
+  <h1>Aprendiendo a usar los @PIPES de Angular</h1>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th> Variable </th>
+            <th> Pipe </th>
+            <th> Resultado </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> {{ nombre }} </td>
+            <td> UpperCasePipe </td>
+            <td> {{ nombre | uppercase }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ nombre }}</td>
+            <td>TitleCasePipe</td>
+            <td> {{ nombre | titlecase }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ nombre }}</td>
+            <td>LowerCasePipe</td>
+            <td> {{ nombre | lowercase }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ nombre }}</td>
+            <td>SlicePipe:3</td>
+            <td> {{ nombre | slice:3 }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ nombre }}</td>
+            <td>SlicePipe:1:5</td>
+            <td> {{ nombre | slice:1:5 }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ precio }}</td>
+            <td> DecimalPipe </td>
+            <td> {{ precio | number }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ precio }}</td>
+            <td> DecimalPipe </td>
+            <td> {{ precio | number:'.0-2' }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ precio }}</td>
+            <td> DecimalPipe </td>
+            <td> {{ precio | number:'.0-1' }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ estadistica }}</td>
+            <td> PercentPipe </td>
+            <td> {{ estadistica | percent:'2.1-2' }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ estadistica }}</td>
+            <td> PercentPipe </td>
+            <td> {{ estadistica | percent:'2.1-2' }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ precio }}</td>
+            <td> CurrencyPipe </td>
+            <td> {{ precio | currency:'AED':'symbol' }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ precio }}</td>
+            <td> CurrencyPipe </td>
+            <td> {{ precio | currency:'EUR' }} </td>
+          </tr>
+
+          <tr>
+            <td>{{ precio }}</td>
+            <td> CurrencyPipe </td>
+            <td> {{ precio | currency:'COP':'symbol-narrow' }} </td>
+          </tr>
+
+        <tr>
+          <td>{{ objeto }}</td>
+          <td> JsonPipe </td>
+          <td>{{ objeto | json }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ valorPromesa }}</td>
+          <td>AsyncPipe</td>
+          <td>{{ valorPromesa | async }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ hoy }}</td>
+          <td>DatePipe</td>
+          <td>{{ hoy | date:'short' }}</td>
+        </tr>
+
+          <tr>
+            <td>{{ hoy }}</td>
+            <td>DatePipe</td>
+            <td>{{ hoy | date:'medium' }}</td>
+          </tr>
+
+          <tr>
+            <td>{{ hoy }}</td>
+            <td>DatePipe</td>
+            <td>{{ hoy | date:'long' }}</td>
+          </tr>
+
+          <tr>
+            <td>{{ hoy }}</td>
+            <td>DatePipe</td>
+            <td>{{ hoy | date:'full' }}</td>
+          </tr>
+
+          <tr>
+            <td>{{ hoy }}</td>
+            <td>DatePipe</td>
+            <td>{{ hoy | date:'shortDate' }}</td>
+          </tr>
+
+          <tr>
+            <td>{{ hoy }}</td>
+            <td>DatePipe</td>
+            <td>{{ hoy | date:'d MMMM yyyy' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
